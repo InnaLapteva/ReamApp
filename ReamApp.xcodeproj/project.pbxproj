@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E966842423930000941200 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E966832423930000941200 /* Task.swift */; };
+		01E966862423951D00941200 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E966852423951D00941200 /* TaskList.swift */; };
+		01E966892424950300941200 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E966882424950300941200 /* StorageManager.swift */; };
+		01E9668B242782E100941200 /* Extantion + UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9668A242782E100941200 /* Extantion + UITableViewCell.swift */; };
 		1482A3E624236BA300BD4776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482A3E524236BA300BD4776 /* AppDelegate.swift */; };
 		1482A3E824236BA300BD4776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482A3E724236BA300BD4776 /* SceneDelegate.swift */; };
 		1482A3ED24236BA300BD4776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1482A3EB24236BA300BD4776 /* Main.storyboard */; };
@@ -15,9 +19,14 @@
 		1482A3FA24236D8500BD4776 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482A3F924236D8500BD4776 /* TaskListTableViewController.swift */; };
 		1482A3FC24236DC400BD4776 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482A3FB24236DC400BD4776 /* TasksTableViewController.swift */; };
 		1482A3FE24236E9F00BD4776 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482A3FD24236E9F00BD4776 /* AlertController.swift */; };
+		D3C816011631547CB8959E06 /* Pods_ReamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C649AD32EF50EB80675D7A /* Pods_ReamApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E966832423930000941200 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		01E966852423951D00941200 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		01E966882424950300941200 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		01E9668A242782E100941200 /* Extantion + UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extantion + UITableViewCell.swift"; sourceTree = "<group>"; };
 		1482A3E224236BA300BD4776 /* ReamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1482A3E524236BA300BD4776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1482A3E724236BA300BD4776 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +37,9 @@
 		1482A3F924236D8500BD4776 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
 		1482A3FB24236DC400BD4776 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		1482A3FD24236E9F00BD4776 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		6CEC24A56EF7D6F4C57C5604 /* Pods-ReamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReamApp.release.xcconfig"; path = "Target Support Files/Pods-ReamApp/Pods-ReamApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF0B800D0CF19DCAEFAD6B32 /* Pods-ReamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReamApp.debug.xcconfig"; path = "Target Support Files/Pods-ReamApp/Pods-ReamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C649AD32EF50EB80675D7A /* Pods_ReamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +47,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C816011631547CB8959E06 /* Pods_ReamApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E966872423968F00941200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01E966832423930000941200 /* Task.swift */,
+				01E966852423951D00941200 /* TaskList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		083F6748B54407B258882D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B800D0CF19DCAEFAD6B32 /* Pods-ReamApp.debug.xcconfig */,
+				6CEC24A56EF7D6F4C57C5604 /* Pods-ReamApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		116A3DBF16EBEEA93BC90F0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C649AD32EF50EB80675D7A /* Pods_ReamApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1482A3D924236BA300BD4776 = {
 			isa = PBXGroup;
 			children = (
 				1482A3E424236BA300BD4776 /* ReamApp */,
 				1482A3E324236BA300BD4776 /* Products */,
+				083F6748B54407B258882D5E /* Pods */,
+				116A3DBF16EBEEA93BC90F0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +104,9 @@
 				1482A3E524236BA300BD4776 /* AppDelegate.swift */,
 				1482A3E724236BA300BD4776 /* SceneDelegate.swift */,
 				1482A3EB24236BA300BD4776 /* Main.storyboard */,
+				01E9668A242782E100941200 /* Extantion + UITableViewCell.swift */,
+				01E966882424950300941200 /* StorageManager.swift */,
+				01E966872423968F00941200 /* Models */,
 				1482A3FF2423719500BD4776 /* ViewControllers */,
 				1482A400242371AE00BD4776 /* Classes */,
 				1482A3EE24236BA500BD4776 /* Assets.xcassets */,
@@ -96,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1482A3F624236BA500BD4776 /* Build configuration list for PBXNativeTarget "ReamApp" */;
 			buildPhases = (
+				75B6D7F03FD4D62E96C96044 /* [CP] Check Pods Manifest.lock */,
 				1482A3DE24236BA300BD4776 /* Sources */,
 				1482A3DF24236BA300BD4776 /* Frameworks */,
 				1482A3E024236BA300BD4776 /* Resources */,
+				1838C068EA638BC489E35FE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,15 +201,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1838C068EA638BC489E35FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReamApp/Pods-ReamApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReamApp/Pods-ReamApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReamApp/Pods-ReamApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75B6D7F03FD4D62E96C96044 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReamApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1482A3DE24236BA300BD4776 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E966862423951D00941200 /* TaskList.swift in Sources */,
+				01E966892424950300941200 /* StorageManager.swift in Sources */,
+				01E9668B242782E100941200 /* Extantion + UITableViewCell.swift in Sources */,
 				1482A3FA24236D8500BD4776 /* TaskListTableViewController.swift in Sources */,
 				1482A3FE24236E9F00BD4776 /* AlertController.swift in Sources */,
 				1482A3E624236BA300BD4776 /* AppDelegate.swift in Sources */,
 				1482A3FC24236DC400BD4776 /* TasksTableViewController.swift in Sources */,
+				01E966842423930000941200 /* Task.swift in Sources */,
 				1482A3E824236BA300BD4776 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +398,7 @@
 		};
 		1482A3F724236BA500BD4776 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0B800D0CF19DCAEFAD6B32 /* Pods-ReamApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +417,7 @@
 		};
 		1482A3F824236BA500BD4776 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEC24A56EF7D6F4C57C5604 /* Pods-ReamApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

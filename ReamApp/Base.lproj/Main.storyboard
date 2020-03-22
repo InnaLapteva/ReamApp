@@ -26,7 +26,7 @@
                             </connections>
                         </segmentedControl>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="2Q4-rB-aah" detailTextLabel="H26-TO-Xpa" style="IBUITableViewCellStyleValue1" id="nID-TR-95d">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskListCell" textLabel="2Q4-rB-aah" detailTextLabel="H26-TO-Xpa" style="IBUITableViewCellStyleValue1" id="nID-TR-95d">
                                 <rect key="frame" x="0.0" y="60" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nID-TR-95d" id="Cqd-VF-LLp">
@@ -60,11 +60,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Task List" id="fbt-xX-Jnx">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="tW2-gf-Day">
-                            <connections>
-                                <action selector="editButtonPressed:" destination="2ls-8w-00e" id="QBl-q4-BDD"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Jt-QJ-dub">
                             <connections>
                                 <action selector="addButtonPressed:" destination="2ls-8w-00e" id="ox0-3o-LTa"/>
@@ -117,8 +112,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="QyM-gC-yeO">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="54F-se-bck"/>
-                            <barButtonItem systemItem="edit" id="phr-P1-EMX"/>
+                            <barButtonItem systemItem="add" id="54F-se-bck">
+                                <connections>
+                                    <action selector="addedButtonPressed:" destination="Tzz-JG-TV9" id="lhX-KQ-OIl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="phr-P1-EMX">
+                                <connections>
+                                    <action selector="editButtonPressed:" destination="Tzz-JG-TV9" id="Dbq-dg-3bZ"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
